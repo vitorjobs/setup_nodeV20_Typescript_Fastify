@@ -43,6 +43,63 @@ app.post('/autentication', async (request, reply) => {
 //   }
 // });
 
+// ENDPOINT PARA ANÁLISE
+
+// const httpsAgent = new https.Agent({
+// 	rejectUnauthorized: false // Ignora a validação do certificado
+// })
+
+// app.get('/inicio', function () {
+// 	return {
+// 		projeto: "Sobre o Projetos",
+// 		tecnologias: "Stack utilizada",
+// 		documentação: "Documentação"
+// 	}
+// })
+
+// app.get('/teste', function () {
+// 	return {
+// 		projeto: "EndPoints",
+// 		tecnologias: "Stack utilizada",
+
+// 	}
+// })
+
+// app.post('/autentication', async (request, reply) => {
+
+// 	try {
+// 		const formData = {
+// 			username: `VEEAMBANCODEDAD\\GFGDFGDD`,
+// 			password: 'DGFDGDGDGD',
+// 			grant_type: 'password',
+// 			refresh_token: ''
+// 		}
+
+// 		const resp = await fetch(
+// 			`https://veeambancodedados:1239/api/token`,
+// 			{
+// 				// httpsAgent: agent,
+// 				method: 'POST',
+// 				headers: {
+// 					'Content-Type': 'application/x-www-form-urlencoded',
+// 					Authorization: 'YOUR_API_KEY_HERE'
+// 				},
+// 				body: new URLSearchParams(formData).toString(),
+
+// 			}
+// 			httpsAgent: httpsAgent
+
+// 		);
+
+// 		return resp
+// 		// const data = await resp.json();
+// 		// console.log(data);
+// 	} catch (error) {
+// 		console.error('Erro ao fazer a requisição:', error);
+// 	}
+
+// })
+
 app
   .listen({
     port: process.env.SERVER_PORT || undefined,
