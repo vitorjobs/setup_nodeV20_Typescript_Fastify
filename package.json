@@ -1,0 +1,28 @@
+{
+  "name": "setup_node_v20_typescript",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "convert-javascript": "npx tsc app/server.ts && node app/server.js",
+    "dev": "tsx --watch src/server.ts",
+    "start": "node src/server.js",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^22.10.2",
+    "eslint": "^8.57.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.0",
+    "zod": "^3.24.1"
+  }
+}
